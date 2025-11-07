@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Foodzie",
-    "slug": "Foodzie",
+    "slug": "veer-j-kamdar",
     "scheme": "with-clerk",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
@@ -15,6 +15,15 @@
           "unstable_useServerMiddleware": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "unstable_useServerMiddleware": true
+      },
+      "eas": {
+        "projectId": "559f20ac-427c-4fad-abbd-b663b91b942b"
+      }
+    },
+    "owner": "veerkam_1797"
   }
 }
