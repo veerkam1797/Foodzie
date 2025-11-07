@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Foodzie",
+    "slug": "Foodzie",
+    "scheme": "with-clerk",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "web": {
+      "output": "server"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "unstable_useServerMiddleware": true
+        }
+      ]
+    ]
+  }
+}
