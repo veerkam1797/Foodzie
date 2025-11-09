@@ -1,8 +1,8 @@
 import { useUser } from '@clerk/clerk-expo'
 import { useEffect, useState } from 'react'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
-
 import { SignOutButton } from '../../components/SignOutButton'
+import LogRocket  from '@logrocket/react-native';
 
 export default function Home() {
   const { user } = useUser()
@@ -21,6 +21,10 @@ export default function Home() {
     }
     void fn()
   }, [])
+
+  LogRocket.identify(user?.id ?? 'guest', {
+    email: user?.emailAddresses[0].emailAddress,
+  });
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
