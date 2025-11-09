@@ -3,6 +3,7 @@ import { Link, useRouter } from 'expo-router'
 import { useState } from 'react'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import { Button } from "../../components/Button"
+import Sentry from './../_layout';
 
 export default function Page() {
   const {signIn, setActive, isLoaded} = useSignIn()
